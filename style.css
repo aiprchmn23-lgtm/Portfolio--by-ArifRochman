@@ -90,8 +90,8 @@ nav .btn:hover {
 }
 
 .hero h2 {
-  font-size: 200px;
-  line-height: 160px;
+  font-size: 100px;
+  line-height: 100px;
   font-weight: 1000;
 }
 
@@ -105,8 +105,8 @@ nav .btn:hover {
 }
 
 .hero-img img {
-  width: 700px;
-  height: 700px;
+  width: 500x;
+  height: 500px;
   object-fit: cover;
   border-radius: 0%;
 }
@@ -358,4 +358,110 @@ nav .btn:hover {
 
 .dots span.active {
   background: #214e4e;
+}
+
+/* ================= MOBILE VERSION ================= */
+@media (max-width: 768px) {
+
+  /* CONTAINER */
+  .container {
+    padding: 0 20px;
+  }
+
+  /* NAVBAR */
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding: 120px 0 50px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero h2 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+  }
+
+  /* ABOUT */
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    width: 200px;
+  }
+
+  .about .desc {
+    text-align: center;
+  }
+
+  /* PROJECT */
+  .projects {
+    padding: 60px 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    font-size: 30px;
+    padding: 40px 20px;
+  }
+
+  /* PREVIEW */
+  .preview-wrapper {
+    height: 250px;
+  }
+
+  .preview-slider img {
+    height: 250px;
+  }
+
+  /* BUTTON PREVIEW */
+  .preview-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  /* CONTACT */
+  .contact-btns {
+    flex-direction: column;
+  }
+
+  .contact-btns button {
+    width: 100%;
+  }
 }
