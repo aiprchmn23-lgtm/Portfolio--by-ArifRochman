@@ -363,19 +363,20 @@ nav .btn:hover {
 
   /* NAVBAR */
   .nav {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row; /* ⬅️ ini penting */
+    justify-content: space-between;
+    align-items: center;
   }
 
   nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* ⬅️ biar tetap horizontal */
     gap: 10px;
   }
 
   nav a {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px; /* kecilin biar muat */
   }
 
   /* HERO */
