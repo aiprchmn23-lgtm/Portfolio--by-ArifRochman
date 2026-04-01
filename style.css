@@ -393,7 +393,8 @@ nav .btn:hover {
   }
 
   .nav {
-    flex-direction: column; /* Stack logo di atas menu jika layar sangat sempit */
+    flex-direction: column;
+    align-items: center; /* ✅ ini yang bikin center */
     gap: 10px;
   }
 
@@ -404,8 +405,10 @@ nav .btn:hover {
   nav {
     display: flex;
     justify-content: center;
+    align-items: center; /* ✅ biar sejajar tengah */
     gap: 15px;
-    flex-wrap: wrap; /* Supaya menu turun ke bawah jika tidak muat */
+    flex-wrap: wrap;
+    width: 100%; /* ✅ biar full dan bisa center */
   }
 
   nav a {
