@@ -1,221 +1,254 @@
-/* RESET & GLOBAL */
-:root {
-  /* Pengaturan Text Desktop */
-  --h2-hero: 100px;
-  --h2-section: 36px;
-  --p-body: 18px;
-  --nav-font: 20px;
-  --card-font: 50px;
-}
-
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
+}
+
+/* FONT SYSTEM */
+:root {
+  --h1: clamp(32px, 6vw, 80px);
+  --h2: clamp(24px, 4vw, 36px);
+  --h3: clamp(20px, 3vw, 28px);
+  --text: clamp(14px, 2.5vw, 18px);
+  --small: clamp(12px, 2vw, 14px);
 }
 
 body {
   background: #0c2a2f;
   color: #fff;
-  overflow-x: hidden; /* Mencegah scroll ke samping */
 }
 
 /* CONTAINER */
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1440px;
+  margin: auto;
   padding: 0 20px;
 }
 
 /* NAVBAR */
 header {
   position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000;
-  padding: 20px 0;
   background: #081C23;
+  padding: 15px 0;
 }
 
 .nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav h1 a {
   color: #fff;
   text-decoration: none;
-  font-size: 24px;
+  font-size: var(--h3);
 }
 
-.nav h1 a span { color: #f5a623; }
+.nav span {
+  color: #f5a623;
+}
 
-nav { display: flex; align-items: center; }
+nav {
+  display: flex;
+  gap: 20px;
+}
 
 nav a {
-  margin-left: 25px;
-  font-size: var(--nav-font);
   color: #fff;
   text-decoration: none;
-  transition: 0.3s ease;
+  font-size: var(--small);
 }
 
-nav a:hover { color: #f5a623; }
+nav a:hover {
+  color: #f5a623;
+}
 
-nav .btn {
-  padding: 8px 16px;
+.btn {
   border: 1px solid #fff;
+  padding: 6px 12px;
   border-radius: 5px;
+}
+
+.btn:hover {
+  background: #f5a623;
+  color: #0c2a2f;
 }
 
 /* HERO */
 .hero {
+  height: 100vh;
   display: flex;
   align-items: center;
-  min-height: 100vh;
-  padding-top: 100px;
-  background: #0c2a2f; /* Ganti ke bg.jpg jika ada */
+  background: url('bg.jpg') center/cover no-repeat;
 }
 
 .hero-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
+  align-items: center;
 }
 
 .hero h2 {
-  font-size: var(--h2-hero);
-  line-height: 1;
-  font-weight: 800;
+  font-size: var(--h1);
 }
 
-.hero h2 span { color: #f5a623; }
+.hero span {
+  color: #f5a623;
+}
 
 .hero p {
-  margin-top: 20px;
-  font-size: var(--p-body);
+  font-size: var(--text);
 }
 
 .hero-img img {
-  width: 450px;
-  height: 450px;
-  object-fit: cover;
+  width: 350px;
 }
 
 /* ABOUT */
 .about {
-  padding: 100px 0;
   background: #f4f4f4;
   color: #333;
+  padding: 80px 0;
+  text-align: center;
 }
 
-.about h2 { font-size: var(--h2-section); text-align: center; }
-.about span { color: #f5a623; }
+.about h2 {
+  font-size: var(--h2);
+}
+
+.about span {
+  color: #f5a623;
+}
 
 .about-content {
   display: flex;
-  align-items: center;
   gap: 40px;
   margin-top: 40px;
+  align-items: center;
 }
 
-.about img { width: 300px; border-radius: 10px; }
+.about img {
+  width: 250px;
+}
 
-.about .desc { text-align: left; }
-
-.about p { line-height: 1.6; font-size: var(--p-body); }
+.about p {
+  font-size: var(--text);
+}
 
 .cv-btn {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 24px;
   background: #f5a623;
+  padding: 10px 15px;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
 }
 
 /* PROJECT */
 .projects {
-  padding: 100px 0;
-  text-align: center;
   background: #f4f4f4;
   color: #333;
+  padding: 80px 0;
+  text-align: center;
 }
 
-.my-text { color: #f5a623; }
+.projects h2 {
+  font-size: var(--h2);
+}
+
+.my-text {
+  color: #f5a623;
+}
+
+.projects p {
+  font-size: var(--text);
+  margin-bottom: 40px;
+}
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin-top: 40px;
 }
 
 .card {
-  padding: 50px 20px;
   background: #214e4e;
+  padding: 40px;
+  font-size: var(--h3);
   color: #fff;
-  border-radius: 15px;
-  font-size: var(--card-font);
+  border-radius: 10px;
 }
 
-.card span { display: block; font-size: 18px; margin-top: 10px; }
+.card span {
+  display: block;
+  font-size: var(--small);
+  margin-top: 10px;
+}
 
-/* PREVIEW & CONTACT */
-.preview-section { margin-top: 40px; display: none; }
-.preview-section.active { display: block; }
+/* CONTACT */
+.contact {
+  padding: 80px 0;
+  text-align: center;
+}
 
-.contact { padding: 100px 0; text-align: center; }
-.contact span { color: #f5a623; }
+.contact h2 {
+  font-size: var(--h2);
+}
 
-.contact-btns { display: flex; justify-content: center; gap: 20px; margin-top: 30px; }
+.contact span {
+  color: #f5a623;
+}
+
+.contact p {
+  font-size: var(--text);
+  margin-top: 10px;
+}
+
+.contact-btns {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .contact-btns button {
-  padding: 15px 30px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 8px;
   background: #cfe0e0;
   cursor: pointer;
-  font-weight: 600;
 }
 
-.footer { padding: 20px; text-align: center; background: #f5a623; color: #0c2a2f; }
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #f5a623;
+  color: #0c2a2f;
+  font-size: var(--small);
+}
 
-/* ================= MOBILE VERSION ================= */
+/* MOBILE */
 @media (max-width: 768px) {
-  :root {
-    /* UBAH UKURAN TEXT MOBILE DI SINI */
-    --h2-hero: 55px;        /* Ukuran tulisan PORTFOLIO */
-    --h2-section: 28px;     /* Ukuran judul section */
-    --p-body: 15px;         /* Ukuran teks paragraf */
-    --nav-font: 13px;       /* Ukuran menu navigasi */
-    --card-font: 35px;      /* Ukuran angka di card project */
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
   }
 
-  header { padding: 15px 0; }
-  
-  .nav { flex-direction: column; gap: 10px; }
-  
-  nav a { margin: 0 10px; font-size: var(--nav-font); }
+  .about-content {
+    flex-direction: column;
+  }
 
-  .hero { padding-top: 140px; text-align: center; }
-  
-  .hero-content { flex-direction: column-reverse; gap: 30px; }
+  .cards {
+    grid-template-columns: 1fr;
+  }
 
-  .hero-img img { width: 280px; height: 280px; }
+  .contact-btns {
+    flex-direction: column;
+  }
 
-  .about-content { flex-direction: column; text-align: center; }
-  
-  .about img { width: 200px; }
-
-  .cards { grid-template-columns: 1fr; } /* Card jadi satu kolom di HP */
-
-  .contact-btns { flex-direction: column; align-items: center; }
-  
-  .contact-btns button { width: 100%; max-width: 280px; }
 }
