@@ -370,7 +370,7 @@ nav .btn:hover {
 
   nav {
     display: flex;
-    flex-direction: row; /* ⬅️ biar tetap horizontal */
+    flex-direction: rcollom; /* ⬅️ biar tetap horizontal */
     gap: 10px;
   }
 
