@@ -141,7 +141,7 @@ nav .btn:hover {
 
 .about p {
   line-height: 1.5;
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .cv-btn {
@@ -166,6 +166,11 @@ nav .btn:hover {
 
 .my-text {
   color: #f5a623;
+}
+
+.project p {
+  line-height: 1.5;
+  font-size: 12px;
 }
 
 .slider-container {
@@ -244,6 +249,8 @@ nav .btn:hover {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.5;
+  font-size: 12px;
 }
 
 .contact-btns {
@@ -283,6 +290,8 @@ nav .btn:hover {
   margin-top: 60px;
   display: none;
   text-align: center;
+  font-size: 8px;
+}
 }
 
 .preview-section.active {
@@ -425,6 +434,11 @@ nav .btn:hover {
     text-align: center;
   }
 
+ .about p {
+    line-height: 1.5;
+    font-size: 12px;
+  }
+ 
   /* PROJECT */
   .projects {
     padding: 60px 20px;
