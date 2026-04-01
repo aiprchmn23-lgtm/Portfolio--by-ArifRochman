@@ -141,7 +141,7 @@ nav .btn:hover {
 
 .about p {
   line-height: 1.5;
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .cv-btn {
@@ -166,11 +166,6 @@ nav .btn:hover {
 
 .my-text {
   color: #f5a623;
-}
-
-.project p {
-  line-height: 1.5;
-  font-size: 12px;
 }
 
 .slider-container {
@@ -249,8 +244,6 @@ nav .btn:hover {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.5;
-  font-size: 12px;
 }
 
 .contact-btns {
@@ -290,8 +283,6 @@ nav .btn:hover {
   margin-top: 60px;
   display: none;
   text-align: center;
-  font-size: 8px;
-}
 }
 
 .preview-section.active {
@@ -382,12 +373,7 @@ nav .btn:hover {
     flex-direction: row; /* ⬅️ biar tetap horizontal */
     gap: 10px;
   }
-  
-  .nav h1 a {
-    font-size: 14px; /* ubah sesuai selera */
-    white-space: nowrap;
-  }
-  
+
   nav a {
     margin: 0;
     font-size: 10px; /* kecilin biar muat */
@@ -434,11 +420,6 @@ nav .btn:hover {
     text-align: center;
   }
 
- .about p {
-    line-height: 1.5;
-    font-size: 12px;
-  }
- 
   /* PROJECT */
   .projects {
     padding: 60px 20px;
