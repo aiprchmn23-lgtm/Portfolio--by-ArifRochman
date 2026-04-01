@@ -332,7 +332,7 @@ nav .btn:hover {
 .preview-slider img {
   width: 100%;
   flex-shrink: 0;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 /* BUTTON PREVIEW */
