@@ -475,9 +475,25 @@ nav .btn:hover {
   }
 
   /* PREVIEW MOBILE */
+  .preview-btn {
+    display: none; /* ❌ sembunyikan tombol */
+  }
+  
   .preview-wrapper {
-    height: auto;
-    aspect-ratio: 4 / 3; /* Sesuaikan rasio gambar di mobile */
+    width: 100%;
+    overflow-x: auto; /* ✅ bisa geser */
+    scroll-snap-type: x mandatory; /* smooth snap */
+  }
+
+  .preview-slider {
+    display: flex;
+    gap: 15px;
+  }
+
+  .preview-slider img {
+    min-width: 100%; /* ✅ full 1 layar */
+    scroll-snap-align: center;
+    border-radius: 20px; /* nanti kita samakan */
   }
 
   /* CONTACT MOBILE */
