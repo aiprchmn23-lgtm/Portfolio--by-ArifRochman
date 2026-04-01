@@ -362,6 +362,10 @@ nav .btn:hover {
   }
 
   /* NAVBAR */
+  .nav h1 a {
+    font-size: 14px; /* ubah sesuai selera */
+  }
+  
   .nav {
     flex-direction: row; /* ⬅️ ini penting */
     justify-content: space-between;
